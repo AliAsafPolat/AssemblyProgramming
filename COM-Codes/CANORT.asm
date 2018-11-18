@@ -23,33 +23,33 @@ BASLA PROC NEAR
 			MOV CX,ELEMAN
 
 L1: 
-			MOV AX,[SI]
-			CMP AX,ESIK
-			JAE KALMADI
-			INC KALDI
-			JMP SON
+			MOV AX,[SI]     ;ilk eleman atandı.
+			CMP AX,ESIK	;esikten buyukse kalmadı labelıne zıplatıyorum ve orada esıkten buyuk olanların sayısı bir artırıyorum.
+			JAE KALMADI	
+			INC KALDI	;esikten kucukse kaldı sayısını bir artırıyorum.
+			JMP SON		;ve esikten buyuklerın sayısına etkilemesın dıye son etiketıne zıplatıyorum.
 KALMADI:	
 			INC ESIKSAY
 			ADD ESIKUSTU,AX
 			
 SON:		ADD SI,2
-			LOOP L1
+			LOOP L1			;ilk loopum  esigi gecenlerin ortalamasını hesaplamak ıcın tasarlandı ve kalanların sayısı belırlendı
 			
 			XOR AX,AX
-			XOR DX,DX
-			MOV AX,ESIKUSTU
-			DIV ESIKSAY
+			XOR DX,DX		;ıkıncı loopum ıse esıgın ustundekılerı kontrol edıp kımın basarılı kimin bute girecegini hesaplamak icin tasarlandı.
+			MOV AX,ESIKUSTU		; esıkustu degiskenim esigi gecenlerinin notlarının toplandigi degiskendir.
+			DIV ESIKSAY		; bu toplami esigi gecenlerin sayisina boldugumde ortalama hesaplanmis olacaktir.
 			MOV ORTALAMA,AX
 			
 			XOR SI,SI
 			MOV CX,ELEMAN
 			LEA SI,DIZI
 			
-L2:			MOV AX,[SI]
+L2:			MOV AX,[SI]		
 			CMP AX,ORTALAMA
-			JB	BUTE 
-			INC BASARILI
-	BUTE :	
+			JB	BUTE 		;Eger deger ortalamadan kucukse BUTE girecektir ve basarili sayılmaz bu sebepten zıplatıldi
+			INC BASARILI		;Basarilılarin sayisini bulursam esigi gecenlerden basarili olanları çıkardıgım zaman büte girecekleri 
+	BUTE :					;hesaplarim demektir.	
 			ADD SI,2
 			LOOP L2
 			
