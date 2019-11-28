@@ -1,0 +1,8 @@
+
+NOT:
+
+Hocam ikinci sorunun 16011079_SORU2.exe dosyasý Dosbox ortamýnda yaptýðým için açýlmamaktýr.Dosbox ortamýnda açýlacaktýr.
+Ayrýyeten lena resmi 16011079_1.exe dosyasýyla ayný dizinde olmalý.Aksi durumda resmi bulamýyor.
+
+Teþekkür ederim,
+Asaf.
