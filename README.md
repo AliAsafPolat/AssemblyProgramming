@@ -1,0 +1,1 @@
+Bu repoda Assembly Programlama dili ile yazdığım kodlar bulunmaktadır. Kodları kendimi geliştirmek amacı ile yazdım. Çoğunluğu Yıldız Teknik Üniversitesinde aldığım Alt Seviye Programlama dersi ödevlerinden oluşmaktadır.
