@@ -1,5 +1,3 @@
-Bu repoda Assembly Programlama dili ile yazdığım kodlar bulunmaktadır. Kodları kendimi geliştirmek amacı ile yazdım. Çoğunluğu Yıldız Teknik Üniversitesinde aldığım Alt Seviye Programlama dersi ödevlerinden oluşmaktadır.
+I learned how to program with Assembly language at this repo. I enjoyed while coding low level, and improved myself. It contains two different type of architecture; COM and EXE.
 
-Basit kodlardan oluşan com ve exe tipi mimariler ile yazılmış kodlar bulunur.
-
-Ayrıyeten Assembly dilinde yazılmış bir resim çevirme (sağa sola yatırma) projesi yer almaktadır.
+This repo also includes a project that change the direction of the image. It is done using assembly language!
